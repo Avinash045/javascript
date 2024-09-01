@@ -43,11 +43,36 @@ const newUsers = [
     }
 ]
 
-console.log(newUsers[2].name);
+// console.log(newUsers[2].name);
 
 
-console.log(Object.keys(user));
-console.log(Object.values(user));
-console.log(Object.entries(user));
+// console.log(Object.keys(user));
+// console.log(Object.values(user));
+// console.log(Object.entries(user));
 
-console.log(user.hasOwnProperty('name'));
+// console.log(user.hasOwnProperty('name'));
+
+
+// ****************** Object Destructuring ************************************
+
+
+const course = {
+    coursename: "MERN",
+    price: 9999,
+    courseInstructor: "Avinash"
+}
+
+console.log(course.coursename);   // normal accessing object element.
+
+const {courseInstructor} = course  // object destructuring.
+console.log(courseInstructor);      // output: Avinash    
+
+const {courseInstructor: teacher} = course  // you can assign your owwn names for object element.
+console.log(teacher);                   // output: Avinash
+
+// {
+//     "name": "Avishkar",
+//     "lastname": "Suryawanshi"            // JSON format
+//     "age" : 22
+// }
+
