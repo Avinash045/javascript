@@ -37,15 +37,36 @@ function anotherUser(username = "India"){
     }
     return `${username} is the winner of World Cup 2024.`
 }
-console.log(anotherUser());
+// console.log(anotherUser());
 
-/* 
-function anotherUser(username){
-    if(username === India){
-        return `${username} is the winner of World Cup 2024.`
-    }                                                                  // error code
-    return `enter your country name first.`
+
+function calCartPrice(num1){
+    return num1
 }
+ console.log(calCartPrice(50));  // u can give directly object too.
 
-console.log(anotherUser("India"));
-*/
+ function multiPrice(...num){
+    return num
+ }
+
+ console.log(multiPrice(299,199,349));
+
+ const user = {
+    prodName: "IceCream",
+    price: 299
+ }
+
+function handleObject(anyObject){
+    return `product is ${anyObject.prodName} and its price is ${anyObject.price}.`
+}
+//console.log(handleObject(user));
+console.log(handleObject({
+    prodName: "IceCream",
+    price: 299
+ }))
+
+const arr = [100,200,300,400]
+function arrFunction(getArr){
+    return getArr[2]
+}
+console.log(arrFunction(arr));
